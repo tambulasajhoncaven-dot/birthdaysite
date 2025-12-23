@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <!-- External CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-birthday-cake"></i> Birthday Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#wishes">Wishes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rsvp">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section d-flex align-items-center justify-content-center vh-100">
+        <div class="container text-center animate__animated animate__fadeIn">
+            <h1 class="display-1"><i class="fas fa-gift"></i> Happy Birthday!</h1>
+            <p class="lead">Celebrate this special Day!</p>
+            <div id="countdown" class="my-4 p-3 bg-white bg-opacity-10 rounded">
+                <h2> Sheene & Shine </h2>
+                <div id="timer" class="display-4 text-warning"></div>
+            </div>
+            <button id="celebrate" class="btn btn-outline-warning btn-lg animate__pulse"><i class="fas fa-confetti"></i> Let's Party!</button>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5 bg-secondary">
+        <div class="container">
+            <h2 class="text-center mb-4">Memory Lane</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img1.jpg" alt="Birthday Pic 1"></div>
+                    <div class="swiper-slide"><img src="img.2.jpg" alt="Birthday Pic 2"></div>
+                    <div class="swiper-slide"><img src="img.3.jpg" alt="Birthday Pic 3"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wishes" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Birthday Wishes</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-heart fa-3x text-danger mb-3"></i>
+                    <p>"Wishing you endless happiness!"</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-star fa-3x text-warning mb-3"></i>
+                    <p>"May your year be as sweet as cake!"</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-smile fa-3x text-success mb-3"></i>
+                    <p>"Cheers to another amazing year!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center mb-4">Celebrant Name</h2>
+            <form id="rsvpForm" class="mx-auto" style="max-width: 500px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label"> Name </label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label"> Age </label>
+                    <input type="age" class="form-control" id="age" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Feedback </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-black text-center py-3">
+        <p>&copy; Made with your none other than me Ven.<i class="fas fa-heart text-danger"></i></p>
+    </footer>
+
+    <!-- External JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
